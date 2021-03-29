@@ -20,11 +20,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var viewColor: UIView!
     
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,7 +35,6 @@ class ViewController: UIViewController {
         // label
         settingColorAndValue()
     }
-    
     
     @IBAction func redActionSlider() {
         changesBackgroundColor()
