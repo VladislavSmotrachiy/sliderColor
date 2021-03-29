@@ -9,11 +9,66 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var redSlider: UISlider!
+    @IBOutlet weak var greenSlider: UISlider!
+    @IBOutlet weak var blueSlider: UISlider!
+    
+    @IBOutlet weak var labelRed: UILabel!
+    @IBOutlet weak var labelBlue: UILabel!
+    @IBOutlet weak var labelGreen: UILabel!
+    
+    @IBOutlet weak var viewColor: UIView!
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //sliders colors tint
+        redSlider.minimumTrackTintColor = .red
+        greenSlider.minimumTrackTintColor = .green
+        blueSlider.minimumTrackTintColor = .blue
+        
+        // view
+        viewColor.layer.cornerRadius = 10
+        changesBackgroundColor()
+        
+        // label
+        settingColorAndValue()
     }
-
-
+    
+    
+    @IBAction func redActionSlider() {
+        changesBackgroundColor()
+        settingColorAndValue()
+    }
+    
+    @IBAction func greenActionSlider() {
+        changesBackgroundColor()
+        settingColorAndValue()
+    }
+    
+    @IBAction func blueActionSlider() {
+        changesBackgroundColor()
+        settingColorAndValue()
+    }
+    
+    private func changesBackgroundColor(){
+        viewColor.backgroundColor =  UIColor(red: CGFloat(redSlider.value) , green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
+    }
+    
+    private func settingColorAndValue(){
+        labelRed.textColor = .red
+        labelGreen.textColor = .green
+        labelBlue.textColor = .blue
+        labelRed.text = "Red: \(String(format: "%.2f", redSlider.value))"
+        labelGreen.text = "Green: \(String(format: "%.2f", greenSlider.value))"
+        labelBlue.text = "Blue:  \(String(format: "%.2f", blueSlider.value))"
+    }
+    
 }
 
