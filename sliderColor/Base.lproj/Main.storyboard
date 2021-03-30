@@ -55,19 +55,19 @@
                                             <slider opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lC2-Lr-xRU">
                                                 <rect key="frame" x="-2" y="0.0" width="257.66666666666663" height="31"/>
                                                 <connections>
-                                                    <action selector="rgbActionSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="Rru-59-iSJ"/>
+                                                    <action selector="rgbActionSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="q8K-QW-SAa"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HBA-bs-u0z" userLabel="Green Slider">
                                                 <rect key="frame" x="-2" y="66" width="257.66666666666663" height="31"/>
                                                 <connections>
-                                                    <action selector="rgbActionSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="mVe-Ir-1Bj"/>
+                                                    <action selector="rgbActionSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="oQX-Hv-VNt"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="n8c-c5-LJQ">
                                                 <rect key="frame" x="-2" y="132" width="257.66666666666663" height="31"/>
                                                 <connections>
-                                                    <action selector="rgbActionSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="rTv-0w-Ofe"/>
+                                                    <action selector="rgbActionSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="bqR-Ia-kkZ"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
