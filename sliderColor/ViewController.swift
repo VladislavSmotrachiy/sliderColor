@@ -26,7 +26,6 @@ class ViewController: UIViewController {
         //sliders colors tint
         redSlider.minimumTrackTintColor = .red
         greenSlider.minimumTrackTintColor = .green
-        blueSlider.minimumTrackTintColor = .blue
         
         // view
         viewColor.layer.cornerRadius = 10
@@ -36,20 +35,11 @@ class ViewController: UIViewController {
         settingColorAndValue()
     }
     
-    @IBAction func redActionSlider() {
+    @IBAction func rgbActionSlider() {
         changesBackgroundColor()
-        settingColorAndValue()
     }
     
-    @IBAction func greenActionSlider() {
-        changesBackgroundColor()
-        settingColorAndValue()
-    }
     
-    @IBAction func blueActionSlider() {
-        changesBackgroundColor()
-        settingColorAndValue()
-    }
     
     private func changesBackgroundColor(){
         viewColor.backgroundColor =  UIColor(red: CGFloat(redSlider.value) , green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
